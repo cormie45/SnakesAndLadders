@@ -4,9 +4,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server:dev": "nodemon server.js",
+    "install-all": "concurrently \"npm install\" \"cd client && npm install\"",
+    "client": "cd client && npm start",
+    "server": "nodemon server/server.js",
     "seeds": "mongo <./db/seed_data.js",
-    "start": "node server.js",
+    "dev": "concurrently \"nodemon server/server.js\" \"cd client && npm run start\"",
+    "build": "cd client && npm build",
+    "start": "node server/server.js",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "keywords": [],
@@ -15,14 +19,12 @@
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "nodemon": "^2.0.7",
     "mongodb": "^3.6.9"
   },
   "engines": {
     "node": "15.11.0"
-  },
-  "devDependencies": {
-    "cors": "^2.8.5",
-    "nodemon": "^2.0.7"
   },
   "description": ""
 }
