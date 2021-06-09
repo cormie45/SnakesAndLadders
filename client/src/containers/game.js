@@ -52,11 +52,8 @@ const Game = () => {
                 tempPlayer.xAxis = ladder.endxAxis
                 tempPlayer.yAxis = ladder.endyAxis
                 tempPlayer.currentSquare = ladder.end
-<<<<<<< HEAD
-=======
                 console.log("ladder hit!")
                 getLadder()
->>>>>>> 877aeb8be191be3ae0b4c7fed0d5a6c0d43c2e08
                 let update = refresh + 1
                 setRefresh(update)
             }
@@ -149,12 +146,8 @@ const Game = () => {
         setRandomAction("")
     }
 
-<<<<<<< HEAD
     const triggerSquare = () => {
-=======
-    const triggerSquare = (newRoll) => {
         console.log(livePlayer.currentSquare)
->>>>>>> 877aeb8be191be3ae0b4c7fed0d5a6c0d43c2e08
         if (drinks.includes(livePlayer.currentSquare)) {
             return getRandomTask()
         } else if (punishments.includes(livePlayer.currentSquare)) {
