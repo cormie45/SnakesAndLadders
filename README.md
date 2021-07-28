@@ -11,10 +11,19 @@ a snake, they go down. However in Snakes and Bladdered there are also tiles whic
 
 In order to join in the fun please:
 
-1. Fork this repository
-2. Navigate to SnakesAndLadders
-3. Navigate to client and run npm install
-4. Navigate to server and run a. npm init -y b. npm install express c. npm install -D nodemon d. npm install -D cors
+1. Fork this repository.
+2. Navigate to SnakesAndLadders.
+3. Navigate to client and run npm install.
+4. Navigate to server and run:
+ 
+    npm init -y
+    
+    npm install express
+    
+    npm install -D nodemon
+    
+    npm install -D cors
+    
 5. Seed the database by running mongodb < db/seed_data.js
 6. Run the database with npm run server:dev
-7. Navigate to client and run the app with npm start  
+7. Navigate to client and run the app with npm start
