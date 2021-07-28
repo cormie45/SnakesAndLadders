@@ -1,5 +1,10 @@
 # SnakesAndBladdered
 
+JavaScript | React | MongoDB
+
+
+<img src="https://i.ibb.co/1b4ZRQD/Screenshot-2021-07-11-at-6-13-44-PM.png" border="0">
+
 A group project using the MERN (MongoDB, Express, React, NodeJS) stack to create a browser game. In this case a twist on the classic Snakes & Ladders.
 As with classic snakes and ladders, a player rolls the dice and their counter moves accordingly; if the player lands on a ladder, they go up, if they hit 
 a snake, they go down. However in Snakes and Bladdered there are also tiles which generate forfeits and tiles which give players a random amount of drinks.
